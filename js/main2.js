@@ -4,7 +4,7 @@
 let utente = prompt("pari o dispari ?");
 let pc = rdmNunber(1,5);
 do {
-    var numeroUtente = parseInt(prompt("inserisci numero"));
+    var numeroUtente = parseInt(prompt("inserisci un numero da 1 a 5"));
     if((numeroUtente >= 6) || (numeroUtente < 1)){
         alert("errore")
     }
@@ -13,9 +13,9 @@ do {
 // Sommiamo i due numeri
 
 let somma = som(numeroUtente,pc);
-console.log(numeroUtente);
-console.log(pc);
-console.log(somma);
+console.log("giocatore " + numeroUtente);
+console.log("pc " + pc);
+console.log("totale " + somma);
 console.log(pariDispari(somma));
 
 
